@@ -71,7 +71,7 @@ npm start
 
 ## 🛠️ Back-End
 
-### Olhe o repositório https://github.com/DevLarre/apiConsumoBackend
+### Olhe o repositório https://github.com/DevLarre/testeapi
 
 ## 📋 ARQUIVOS PRINCIPAIS
 
