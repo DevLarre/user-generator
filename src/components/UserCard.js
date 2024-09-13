@@ -1,15 +1,22 @@
-import React, { useState } from 'react';
-import male from '../assets/male-svgrepo-com (1).svg'
-import female from '../assets/female-svgrepo-com (1).svg'
+import React, { useState, useEffect } from 'react';
+import male from '../assets/male-svgrepo-com (1).svg';
+import female from '../assets/female-svgrepo-com (1).svg';
 import gmail from '../assets/gmail-svgrepo-com.svg';
-import calendar from '../assets/calendar-svgrepo-com.svg'
-import earth from '../assets/earth-9-svgrepo-com.svg'
-import googleMaps from '../assets/google-maps-svgrepo-com (1).svg'
-import whatsapp from '../assets/whatsapp-svgrepo-com (2).svg'
+import calendar from '../assets/calendar-svgrepo-com.svg';
+import earth from '../assets/earth-9-svgrepo-com.svg';
+import googleMaps from '../assets/google-maps-svgrepo-com (1).svg';
+import whatsapp from '../assets/whatsapp-svgrepo-com (2).svg';
 import './UserCard.css';
 
 const UserCard = ({ user }) => {
   const [hoverInfo, setHoverInfo] = useState({ label: 'My email address is', value: user.email });
+
+  // Atualiza as informações de hoverInfo sempre que o usuário for alterado
+  useEffect(() => {
+    if (user) {
+      setHoverInfo({ label: 'My email address is', value: user.email });
+    }
+  }, [user]);
 
   const handleMouseOver = (label, value) => {
     setHoverInfo({ label, value });
