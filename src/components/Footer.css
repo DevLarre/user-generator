@@ -1,0 +1,38 @@
+.footer {
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(59, 58, 58, 0.01);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .footer a {
+    color: #61dafb;
+    text-decoration: none;
+    
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .icon_footer {
+    width: 2rem;
+    margin: 5px;
+}
+  
+  @media (max-width: 768px) {
+    .footer{
+        position: relative;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer{
+        position: relative;
+    }
+  }
