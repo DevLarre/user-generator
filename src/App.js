@@ -39,7 +39,11 @@ function App() {
           Uma API gratuita e de código aberto para gerar dados de usuários aleatórios. Como Lorem Ipsum, mas para pessoas.
         </p>
         <button id="loadUsers" onClick={loadUser} disabled={loading}>
-          {loading ? 'Carregando...' : 'Gerar Usuário'}
+          {loading ? (
+            <div className="spinner"></div>
+          ) : (
+            'Gerar Usuário'
+          )}
         </button>
         {error && <p style={{ color: 'red' }}>{error}</p>}
         {user && <UserCard user={user} />}
