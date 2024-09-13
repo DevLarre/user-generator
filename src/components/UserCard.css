@@ -17,7 +17,7 @@
 .icon_img {
   width: 40px;
   height: 35px;
-  transition: transform 0.3s ease; /* Transição suave para o efeito de salto */
+  transition: transform 0.3s ease;
 }
 
 .user-card p {
@@ -42,7 +42,7 @@
 }
 
 .icon-item:hover .icon_img {
-  transform: translateY(-10px); /* Salta 10px para cima */
+  transform: translateY(-10px); 
 }
 
 .profile-pic {
