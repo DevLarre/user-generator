@@ -42,9 +42,10 @@ Este projeto tem como objetivo o **aprendizado** e a **integração** de **Front
 ### 🖥️ Front-End
 
 1. **Clone o repositório**:
-   ```
-   git clone https://github.com/DevLarre/Random-User.git
-   ```
+
+```
+git clone https://github.com/DevLarre/Random-User.git
+```
 
 2. Navegue até o diretório do projeto:
 
